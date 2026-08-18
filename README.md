@@ -38,8 +38,13 @@ My Leetcode Practice
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/BPardhaSaradhi7/LEETCODE-GRIND/tree/master/0020-valid-parentheses) |
+| [0155-min-stack](https://github.com/BPardhaSaradhi7/LEETCODE-GRIND/tree/master/0155-min-stack) |
 ## Bracket Sequences
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/BPardhaSaradhi7/LEETCODE-GRIND/tree/master/0020-valid-parentheses) |
+## Design
+|  |
+| ------- |
+| [0155-min-stack](https://github.com/BPardhaSaradhi7/LEETCODE-GRIND/tree/master/0155-min-stack) |
 <!---LeetCode Topics End-->
