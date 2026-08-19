@@ -1,7 +1,7 @@
 class Solution {
     public boolean isValid(String s) 
     {
-        Stack<Character> st = new Stack<>();
+        Deque<Character> st = new ArrayDeque<>();
 
         for(int i=0;i<s.length();i++)
         {
@@ -12,33 +12,32 @@ class Solution {
                 st.push(ch);
             }
 
-            else
-            {
+            else{
 
                 if(st.isEmpty())
-                return false;
+                {
+                    return false;
+                }
 
-               char top = st.peek();
+                if(ch==')' && st.peek()!='(')
+                {
+                    return false;
+                }
 
-               if(ch==')' && top!='(')
-               {
-                return false;
-               }
+                if(ch==']' && st.peek()!='[')
+                {
+                    return false;
+                }
 
-               if(ch==']' && top!='[')
-               {
-                return false;
-               } 
+                if(ch=='}' && st.peek()!='{')
+                {
+                    return false;
+                }
 
-               if(ch=='}' && top!='{')
-               {
-                return false;
-               }
-
-               st.pop();
+                st.pop();
             }
         }
 
-        return st.isEmpty();
+        return st.isEmpty();  
     }
 }
