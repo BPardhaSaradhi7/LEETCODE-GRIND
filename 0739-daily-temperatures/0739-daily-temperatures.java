@@ -4,6 +4,7 @@ class Solution {
         int n = temperatures.length;
 
         Deque<Integer> st = new ArrayDeque<>();
+        
         int ans[] =new int[n];
 
         for(int i=n-1;i>=0;i--)
